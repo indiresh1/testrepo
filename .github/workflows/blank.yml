@@ -28,4 +28,6 @@ jobs:
         run: inso lint spec spc_750c82 --ci
       - name: Run test suites
         run: inso run test uts_8f4fab --env UnitTest --ci
+      - name: Generate declarative config
+        run: inso generate config "Designer Demo" --type declarative --ci
     
