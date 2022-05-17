@@ -1,0 +1,22 @@
+_id: ut_048c0bb8e29b464dabb91943a3e39902
+type: UnitTest
+parentId: uts_8f4fabc4a1744565aa0b804b1359e25b
+modified: 1652807978625
+created: 1652807276907
+requestId: req_wrk_f346bf697e874d878ea266dc07ba3a7131003c6a
+name: Fetch All Users
+code: |-
+  const response1 = await insomnia.send();
+  const body = JSON.parse(response1.data);
+
+  expect(body).to.be.an('array');
+  expect(body).to.have.lengthOf.above(1);
+
+  const item = body[0];
+  expect(item).to.be.an('object');
+  expect(Object.keys(item)).to.have.lengthOf(4);
+  expect(item).to.have.property('id');
+  expect(item).to.have.property('username');
+  expect(item).to.have.property('score');
+  expect(item).to.have.property('active');
+  expect(item.username).to.equal('bear');

@@ -1,0 +1,21 @@
+_id: req_wrk_f346bf697e874d878ea266dc07ba3a7131003c6a
+type: Request
+parentId: wrk_f346bf697e874d878ea266dc07ba3a71
+modified: 1652798734032
+created: 1652794098076
+url: "{{ base_url }}/users"
+name: fetch users
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1652794098076
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
