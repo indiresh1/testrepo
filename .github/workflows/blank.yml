@@ -27,5 +27,5 @@ jobs:
       - name: Lint
         run: inso lint spec spc_750c82 --ci
       - name: Run test suites
-        run: inso run test "uts_8f4fab" --env UnitTest --ci
+        run: inso run test uts_8f4fab --env UnitTest --ci
     
