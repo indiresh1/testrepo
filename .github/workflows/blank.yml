@@ -27,7 +27,7 @@ jobs:
       - name: Lint
         run: inso lint spec Test - spc_750c82 --ci
       - name: Run test suites
-        run: inso run test uts_8f4fab --env OpenAPI env - env_env_b89faa --ci
+        run: inso run test Test - spc_750c82 --env uts_8f4fab --ci
       - name: Generate declarative config
         run: inso generate config "Designer Demo" --type declarative --ci
     
